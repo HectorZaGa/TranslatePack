@@ -9,10 +9,31 @@ It is meant to improve accessibility and gameplay for Spanish-speaking players b
 3. Enable the resourcepack in Minecraft settings.
 
 ## 📝 Supported Mods
-This pack supports a variety of mods that either lack Spanish localizations or have outdated ones. Depending on the version of the pack, the number of available translations may vary, as some mods are not yet updated for certain Minecraft versions.
+- [x] **Apothic Attributes** - Attribute system enhancements
+- [x] **Better Combat** - Enhanced combat mechanics
+- [x] **Cloth Config** - Configuration API for mods
+- [x] **Curios API** - Equipment and accessory slots
+- [x] **Ender's Delight** - End-themed food and cooking
+- [x] **Farmer's Delight** - Farming and cooking overhaul
+- [x] **Handcrafted** - Decorative furniture and items
+- [x] **Iron's Jewelry** - Magical jewelry and accessories
+- [x] **Iron's Spells 'n Spellbooks** - Magic and spellcasting system
+- [x] **Just Enough Items (JEI)** - Recipe viewing and item management
+- [x] **Moonlight Lib** - Library mod for various enhancements
+- [x] **My Nether's Delight** - Nether-themed food and cooking
+- [x] **Placebo** - Core library for various mods
+- [x] **Sawmill** - Advanced wood processing
+- [x] **Sodium** - Performance optimization for rendering
+- [x] **Sophisticated Backpacks** - Advanced backpack system
+- [x] **Sophisticated Core** - Core library for Sophisticated mods
+- [x] **Sophisticated Storage** - Advanced storage solutions
+- [x] **Supplementaries** - Various utility additions and decorations
+- [x] **Tombstone** - Death management and graves
+
+*(This resourcepack contains translations for 20 mods and counting)*
 
 ## 🔧 Technical Information
-- **Minecraft Version**: 1.20+, 1.21+
+- **Target Minecraft Version**: 1.21+
 - **Language Code**: es_ES (Spanish - Spain)
 - **Format**: Standard Minecraft resourcepack structure
 - **Compatibility**: Works with mod versions as of 2025
