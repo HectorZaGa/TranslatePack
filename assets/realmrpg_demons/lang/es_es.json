@@ -1,0 +1,17 @@
+{
+  "effect.realmrpg_demons.lords_influence": "Influencia del señor",
+  "item.realmrpg_demons.imp_spawn_egg": "Generar diablillo",
+  "entity.realmrpg_demons.demon_lord": "Señor demonio",
+  "item.realmrpg_demons.demon_minion_spawn_egg": "Generar esbirro demoníaco",
+  "entity.realmrpg_demons.imp_guard": "Guardia diablillo",
+  "item.realmrpg_demons.chort_spawn_egg": "Generar chort",
+  "item.realmrpg_demons.demon_lord_spawn_egg": "Generar señor demonio",
+  "entity.realmrpg_demons.imp": "Diablillo",
+  "entity.realmrpg_demons.ancient_demon_lord": "Señor demonio antiguo",
+  "entity.realmrpg_demons.chort": "Chort",
+  "entity.realmrpg_demons.demon": "Demonio",
+  "item.realmrpg_demons.imp_guard_spawn_egg": "Generar guardia diablillo",
+  "entity.realmrpg_demons.demon_minion": "Esbirro demoníaco",
+  "item.realmrpg_demons.ancient_demon_lord_spawn_egg": "Generar señor demonio antiguo",
+  "item.realmrpg_demons.demon_spawn_egg": "Generar demonio"
+}

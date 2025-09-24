@@ -1,0 +1,48 @@
+{
+
+	"no.ge_": "->------------------------]  Game Elements  [------------------------<-",
+
+	"block.create_mechanical_spawner.mechanical_spawner": "Generador Mecánico",
+
+	"fluid.create_mechanical_spawner.spawn_fluid_blaze": "Fluido de generación de Blaze",
+	"fluid.create_mechanical_spawner.spawn_fluid_creeper": "Fluido de generación de Creeper",
+	"fluid.create_mechanical_spawner.spawn_fluid_enderman": "Fluido de generación de Enderman",
+	"fluid.create_mechanical_spawner.spawn_fluid_magma_cube": "Fluido de generación de Cubo de magma",
+	"fluid.create_mechanical_spawner.spawn_fluid_random": "Fluido de generación aleatoria",
+	"fluid.create_mechanical_spawner.spawn_fluid_skeleton": "Fluido de generación de Esqueleto",
+	"fluid.create_mechanical_spawner.spawn_fluid_slime": "Fluido de generación de Slime",
+	"fluid.create_mechanical_spawner.spawn_fluid_spider": "Fluido de generación de Araña",
+	"fluid.create_mechanical_spawner.spawn_fluid_zombie": "Fluido de generación de Zombi",
+
+	"item.create_mechanical_spawner.spawn_fluid_blaze_bucket": "Cubo con fluido de generación de Blaze",
+	"item.create_mechanical_spawner.spawn_fluid_creeper_bucket": "Cubo con fluido de generación de Creeper",
+	"item.create_mechanical_spawner.spawn_fluid_enderman_bucket": "Cubo con fluido de generación de Enderman",
+	"item.create_mechanical_spawner.spawn_fluid_magma_cube_bucket": "Cubo con fluido de generación de Cubo de magma",
+	"item.create_mechanical_spawner.spawn_fluid_random_bucket": "Cubo con fluido de generación aleatoria",
+	"item.create_mechanical_spawner.spawn_fluid_skeleton_bucket": "Cubo con fluido de generación de Esqueleto",
+	"item.create_mechanical_spawner.spawn_fluid_slime_bucket": "Cubo con fluido de generación de Slime",
+	"item.create_mechanical_spawner.spawn_fluid_spider_bucket": "Cubo con fluido de generación de Araña",
+	"item.create_mechanical_spawner.spawn_fluid_zombie_bucket": "Cubo con fluido de generación de Zombi",
+
+	
+
+
+	"no.ui_": "->------------------------]  UI  [------------------------<-",
+
+	"itemGroup.create_mechanical_spawner:main": "Create: Mechanical Spawner",
+
+	"config.jade.plugin_create_mechanical_spawner.spawner_data": "Datos del generador mecánico",
+
+	"create_mechanical_spawner.recipe.spawner": "Receta del generador",
+
+	"create_mechanical_spawner.generic.biome_dependant": "Dependiente del bioma",
+
+	"create_mechanical_spawner.spawner.tooltip.progress": "Progreso: %d%%",
+	"create_mechanical_spawner.spawner.scrollValue.label": "Generar a altura (en bloques)",
+
+	"block.create_mechanical_spawner.mechanical_spawner.tooltip": "GENERADOR MECÁNICO",
+	"block.create_mechanical_spawner.mechanical_spawner.tooltip.summary": "Genera _mobs_ con líquido de generación.",
+
+	"no.thn_": "Thank you for translating Create Mechanical Spawner!"
+
+}

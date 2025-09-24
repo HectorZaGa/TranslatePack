@@ -1,0 +1,6 @@
+{
+"block.ars_creo.starbuncle_wheel": "Rueda de starbuncle",
+"ars_creo.page.starbuncle_wheel": "Genera fuerza rotacional para Create. Colocar un bloque de oro frente a la rueda aumentará las RPM.",
+"ars_creo.page.behaviors": "Ars Creo habilita comportamientos especiales de dispositivos para bloques de Ars Nouveau, incluyendo torres de hechizos y frascos fuente. Torreta de hechizos básica: Dispara un hechizo cuando se interactúa con el dispositivo. Torreta temporizada: Dispara un hechizo en intervalos. Torreta de hechizos Encantada: Dispara un hechizo cada vez que visita un nuevo bloque. Frasco fuente: Puede ser consumido por torretas en un dispositivo.",
+"itemGroup.ars_creo.general": "Ars Creo"
+}

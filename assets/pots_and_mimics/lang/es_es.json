@@ -1,0 +1,23 @@
+{
+  "entity.pots_and_mimics.end_pot_crab": "Cangrejo de ánfora del End",
+  "block.pots_and_mimics.treasure_pot": "Ánfora del tesoro",
+  "subtitles.pot_crab_hurt": "El cangrejo de ánfora se lastima",
+  "block.pots_and_mimics.nether_treasure_pot": "Ánfora del tesoro del Nether",
+  "subtitles.pot_crab_ambient": "El cangrejo de ánfora hace clic",
+  "gamerule.potCrabSpawnChance.description": "Define la probabilidad de que aparezca un cangrejo de una ánfora (por defecto es 17%).",
+  "gamerule.potCrabSpawning.description": "Habilita la aparición de cangrejos de ánfora al romper ánforas.",
+  "gamerule.potCrabSpawnChance": "Probabilidad de aparición del cangrejo de ánfora",
+  "block.pots_and_mimics.end_treasure_pot": "Ánfora del tesoro del End",
+  "block.pots_and_mimics.decorative_end_pot": "Ánfora decorativa del End",
+  "item.pots_and_mimics.poison_pot_crab_spawn_egg": "Generar cangrejo de ánfora venenoso",
+  "subtitles.pot_crab_death": "El cangrejo de ánfora muere",
+  "block.pots_and_mimics.decorative_nether_pot": "Ánfora decorativa del Nether",
+  "entity.pots_and_mimics.nether_pot_crab": "Cangrejo de ánfora del Nether",
+  "item.pots_and_mimics.nether_pot_crab_spawn_egg": "Generar cangrejo de ánfora del Nether",
+  "entity.pots_and_mimics.pot_crab": "Cangrejo de ánfora",
+  "block.pots_and_mimics.decorative_pot": "Ánfora decorativa",
+  "item.pots_and_mimics.end_pot_crab_spawn_egg": "Generar cangrejo de ánfora del End",
+  "item.pots_and_mimics.pot_crab_spawn_egg": "Generar cangrejo de ánfora",
+  "gamerule.potCrabSpawning": "Aparición de cangrejo de ánfora",
+  "entity.pots_and_mimics.poison_pot_crab": "Cangrejo de ánfora venenoso"
+}

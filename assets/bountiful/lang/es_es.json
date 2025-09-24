@@ -1,0 +1,88 @@
+{
+
+	"block.bountiful.bountyboard": "Tablón de recompensas",
+
+	"itemgroup.bountiful": "Bountiful",
+
+	"bountiful.entry.shepherd_obj_wool_wildcard": "Cualquier lana",
+	"bountiful.entry.fletcher_obj_planks": "Cualquier tablón",
+	"bountiful.entry.fletcher_obj_logs": "Cualquier tronco",
+	"bountiful.entry.shepherd_obj_bed_wildcard": "Cualquier cama",
+	"bountiful.entry.fisherman_obj_any_boat": "Cualquier bote",
+	"bountiful.entry.mapper_obj_candles": "Cualquier vela",
+	"bountiful.entry.shepherd_obj_banner_wildcard": "Cualquier estandarte",
+
+	"bountiful.entry.fisherman_obj_catch_ench_book": "Pescar libros encantados",
+	"bountiful.entry.cleric_obj_brew_swiftness": "Preparar una poción de rapidez básica",
+	"bountiful.entry.cleric_obj_cure_zombie_villager": "Curar a un aldeano zombi",
+
+
+	"bountiful.decree": "Decreto",
+	"bountiful.decrees": "Decretos",
+	"bountiful.decree.invalid": "Decreto inválido",
+	"bountiful.decree.notset": "¡Lleva esto a un tablón de recompensas!",
+
+	"bountiful.bounty.expired": "Esta recompensa ha expirado.",
+	"bountiful.bounty.turnin": "Completa tu recompensa haciendo clic derecho en un tablón de recompensas.",
+
+	"bountiful.advancement.bounty_taken.title": "Trabajo por contrato",
+	"bountiful.advancement.bounty_taken.desc": "Toma una recompensa de un tablón de recompensas",
+
+	"bountiful.advancement.bounty_complete.title": "Pago honesto por trabajo honesto",
+	"bountiful.advancement.bounty_complete.desc": "¡Completa una recompensa!",
+
+	"bountiful.advancement.rush_order.title": "Entrega de pedido urgente",
+	"bountiful.advancement.rush_order.desc": "Completa una recompensa en menos de un minuto",
+
+	"bountiful.advancement.procrastinator.title": "Maestro procrastinador",
+	"bountiful.advancement.procrastinator.desc": "Completa una recompensa con menos de cinco segundos restantes",
+
+	"bountiful.advancement.town_crier.title": "Pregonero",
+	"bountiful.advancement.town_crier.desc": "¡Obtén un decreto!",
+
+	"bountiful.advancement.royal_mandate.title": "Mandato real",
+	"bountiful.advancement.royal_mandate.desc": "Pon un decreto en un tablón de recompensas",
+
+	"bountiful.bounty": "Recompensa",
+
+	"bountiful.decree.armorer.name": "Herrería de armaduras",
+	"bountiful.decree.butcher.name": "Carnicería",
+	"bountiful.decree.chef.name": "Suministros de chef",
+	"bountiful.decree.cleric.name": "Suministros de clérigo",
+	"bountiful.decree.farmer.name": "Agricultura",
+	"bountiful.decree.fisherman.name": "Pesca",
+	"bountiful.decree.fletcher.name": "Flechería",
+	"bountiful.decree.hunting.name": "Caza de monstruos",
+	"bountiful.decree.inventor.name": "Invención",
+	"bountiful.decree.leatherer.name": "Marroquinería",
+	"bountiful.decree.librarian.name": "Bibliotecario",
+	"bountiful.decree.mapper.name": "Cartografía",
+	"bountiful.decree.mason.name": "Albañilería",
+	"bountiful.decree.shepherd.name": "Pastoreo",
+	"bountiful.decree.tinker.name": "Bricolaje",
+	"bountiful.decree.toolsmith.name": "Herrería de herramientas",
+	"bountiful.decree.invalid_decree.name": "Decreto inválido",
+
+	"bountiful.bounty.type.entity.kills": "Asesinatos",
+
+	"bountiful.bounty.type.experience.levels": "Niveles de experiencia",
+	"bountiful.bounty.type.experience.points": "Puntos de experiencia",
+
+	"bountiful.rarity.common": "Común",
+	"bountiful.rarity.uncommon": "Poco común",
+	"bountiful.rarity.rare": "Raro",
+	"bountiful.rarity.epic": "Épico",
+
+	"stat.bountiful.bounties_taken": "Recompensas tomadas",
+	"stat.bountiful.bounties_done": "Recompensas completadas (Total)",
+	"stat.bountiful.bounties_done_0": "Recompensas completadas (Común)",
+	"stat.bountiful.bounties_done_1": "Recompensas completadas (Poco común)",
+	"stat.bountiful.bounties_done_2": "Recompensas completadas (Raro)",
+	"stat.bountiful.bounties_done_3": "Recompensas completadas (Épico)",
+
+	"bountiful.tooltip.time": "Tiempo para completar",
+	"bountiful.tooltip.required": "Requerido",
+	"bountiful.tooltip.rewards": "Recompensas",
+	"bountiful.tooltip.expired": "Expirado",
+	"bountiful.tooltip.requirements": "No se cumplen los requisitos."
+}

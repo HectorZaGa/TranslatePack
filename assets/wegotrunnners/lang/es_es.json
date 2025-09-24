@@ -1,0 +1,21 @@
+{
+  "effect.wegotrunnners.groundertmp": "Zombi excavador",
+  "effect.groundertmp": "Zombi excavador",
+  "effect.normalzombietmp": "Caminante",
+  "effect.runnerspreads": "Propagación del corredor",
+  "effect.aggrozom": "Enfurecido",
+  "effect.wegotrunnners.runnerzombieeff": "Habilidades del zombi",
+  "block.wegotrunnners.test": "Test",
+  "effect.runertmp": "Zombi corredor",
+  "effect.wegotrunnners.grounded": "Enraizado",
+  "effect.runnerzombieeff": "Habilidades del zombi",
+  "effect.grounded": "Enraizado",
+  "effect.wegotrunnners.runertmp": "Zombi corredor",
+  "effect.wegotrunnners.normalzombietmp": "Caminante",
+  "config.wegotrunnners.wegorrunnersconfig": "wegotrunnersconfig",
+  "effect.wegotrunnners.aggrozom": "Enfurecido",
+  "subtitles.iron_crit": "Golpe crítico del golem de hierro excavador",
+  "effect.wegotrunnners.runnerspreads": "Propagación del corredor",
+  "config.wegotrunnners.wegotrunnerclientconfig": "wegotrunnersconfigclient",
+  "subtitles.stuncrit": "Golpe aturdidor del excavador"
+}

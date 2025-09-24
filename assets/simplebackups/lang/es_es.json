@@ -1,0 +1,8 @@
+{
+"simplebackups.backup_started": "Copia de seguridad iniciada...",
+  "simplebackups.backup_finished": "Copia de seguridad completada en %s (%s | %s)",
+  "simplebackups.backups_paused": "Copias de seguridad pausadas",
+  "simplebackups.commands.only_modified": "No solo se están respaldando los archivos modificados, por favor revisa tu archivo de configuración",
+  "simplebackups.commands.is_merging": "Ya hay una operación de fusión en progreso",
+  "simplebackups.commands.finished": "Fusión de copias de seguridad completada con éxito"
+}

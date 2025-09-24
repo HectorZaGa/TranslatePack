@@ -1,0 +1,19 @@
+{
+    "components": [
+        {
+            "type": "patchouli:text",
+            "text": "An $(l)#item->iname#/$ is a $(l:natural_berry)natural berry$().",
+            "x": 0,
+            "y": 40
+        }
+    ],
+    "include": [
+        {
+            "template": "cobblepedia:spotlight",
+            "as": "spotlight",
+            "using": {
+                "item": "#item"
+            }
+        }
+    ]
+}

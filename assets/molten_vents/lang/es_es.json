@@ -1,0 +1,15 @@
+{
+  "block.molten_vents.active_molten_asurine": "Núcleo de azurina activo",
+  "block.molten_vents.active_molten_veridium": "Núcleo de veridio activo",
+  "block.molten_vents.active_molten_crimsite": "Núcleo de carmesina activo",
+  "block.molten_vents.active_molten_ochrum": "Núcleo de ocre activo",
+  "block.molten_vents.active_molten_scorchia": "Núcleo de escoria oscura activo",
+  "block.molten_vents.active_molten_scoria": "Núcleo de escoria activo",
+
+  "block.molten_vents.dormant_molten_asurine": "Núcleo de azurina inactivo",
+  "block.molten_vents.dormant_molten_veridium": "Núcleo de veridio inactivo",
+  "block.molten_vents.dormant_molten_crimsite": "Núcleo de carmesina inactivo",
+  "block.molten_vents.dormant_molten_ochrum": "Núcleo de ocre inactivo",
+  "block.molten_vents.dormant_molten_scorchia": "Núcleo de escoria oscura inactivo",
+  "block.molten_vents.dormant_molten_scoria": "Núcleo de escoria inactivo"
+}

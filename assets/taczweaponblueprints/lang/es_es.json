@@ -1,0 +1,50 @@
+{
+  "itemGroup.taczweaponblueprints": "TaCZ Weapon Blueprints",
+
+  "item.taczweaponblueprints.blueprint": "Plano: ",
+  "item.taczweaponblueprints.blueprint.invalid_name": "Plano inválido",
+  "item.taczweaponblueprints.blueprint.tooltip": "Haz clic derecho para desbloquear la receta de fabricación para %s.",    
+
+  "message.taczweaponblueprints.blueprint.unlocked": "¡Has desbloqueado la receta para %s!",
+  "message.taczweaponblueprints.blueprint.already_known": "Ya conoces esta receta.",
+  "message.taczweaponblueprints.blueprint.invalid_recipe": "Receta inválida para este plano.",
+  "message.taczweaponblueprints.blueprint.invalid_blueprint": "Este plano es inválido.",
+
+  "commands.taczweaponblueprints.blueprint.give.success": "Se ha dado exitosamente a %s un plano para %s.",
+  "commands.taczweaponblueprints.blueprint.give.invalid_player": "Jugador inválido.",
+  "commands.taczweaponblueprints.blueprint.give.invalid_blueprint": "Plano inválido.",
+  "commands.taczweaponblueprints.blueprint.give.usage": "Uso: /blueprint give <jugador> <plano>",
+  "commands.taczweaponblueprints.blueprint.give.no_permission": "No tienes permiso para usar este comando.",
+  "commands.taczweaponblueprints.blueprint.give.unknown_error": "Ocurrió un error desconocido al dar el plano.",
+
+  "commands.taczweaponblueprints.reload_tacz_recipes.success": "Recetas de TACZ recargadas exitosamente.",
+  "commands.taczweaponblueprints.reload_tacz_recipes.unknown_error": "Ocurrió un error desconocido al recargar las recetas.",
+  "commands.taczweaponblueprints.reload_tacz_recipes.usage": "Uso: /gg reloadRecipes",
+
+  "commands.taczweaponblueprints.clear_tacz_recipes.success": "Recetas de TACZ limpiadas exitosamente.",
+  "commands.taczweaponblueprints.clear_tacz_recipes.unknown_error": "Ocurrió un error desconocido al limpiar las recetas.",
+  "commands.taczweaponblueprints.clear_tacz_recipes.usage": "Uso: /gg clearRecipes",
+  "commands.taczweaponblueprints.clear_tacz_recipes.no_permission": "No tienes permiso para usar este comando.",
+  
+  "config.taczweaponblueprints.general": "Configuración General",
+  "config.taczweaponblueprints.general.desc": "Configuraciones relacionadas con el paquete predeterminado",
+  "config.taczweaponblueprints.general.debugMode": "Modo de Depuración del Paquete",
+  "config.taczweaponblueprints.general.debugMode.desc": "Si se debe habilitar el modo de depuración para el paquete predeterminado",
+  
+  "config.taczweaponblueprints.blueprint": "Configuración de Planos",
+  "config.taczweaponblueprints.blueprint.desc": "Configuraciones relacionadas con los planos de armas",
+  "config.taczweaponblueprints.blueprint.blueprintSpawnChance": "Probabilidad de Aparición de Planos",
+  "config.taczweaponblueprints.blueprint.blueprintSpawnChance.desc": "Probabilidad de que un plano aparezca en un cofre",
+  "config.taczweaponblueprints.blueprint.minBlueprints": "Planos Mínimos",
+  "config.taczweaponblueprints.blueprint.minBlueprints.desc": "Número mínimo de planos que aparecerán si se cumple la probabilidad",
+  "config.taczweaponblueprints.blueprint.maxBlueprints": "Planos Máximos",
+  "config.taczweaponblueprints.blueprint.maxBlueprints.desc": "Número máximo de planos que aparecerán si se cumple la probabilidad",
+  "config.taczweaponblueprints.blueprint.startingBlueprints": "Planos Iniciales",
+  "config.taczweaponblueprints.blueprint.startingBlueprints.desc": "Lista de planos con los que los jugadores comienzan",
+  "config.taczweaponblueprints.blueprint.gunBlacklist": "Lista Negra de Planos de Armas",
+  "config.taczweaponblueprints.blueprint.gunBlacklist.desc": "Lista de armas para las que no se generarán planos",
+  "config.taczweaponblueprints.blueprint.ammoBlacklist": "Lista Negra de Planos de Munición",
+  "config.taczweaponblueprints.blueprint.ammoBlacklist.desc": "Lista de municiones para las que no se generarán planos",
+  "config.taczweaponblueprints.blueprint.attachmentBlacklist": "Lista Negra de Planos de Accesorios",
+  "config.taczweaponblueprints.blueprint.attachmentBlacklist.desc": "Lista de accesorios para los que no se generarán planos"
+}

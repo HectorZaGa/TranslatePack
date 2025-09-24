@@ -1,0 +1,26 @@
+{
+	"commands.hordes.SpawnHordeWave.usage":"/hordes spawnWave <número de mobs a invocar>",
+	"commands.hordes.SpawnHordeWave.success":"Horda invocada con éxito;",
+	"commands.hordes.SpawnHordeWave.invalidValue":"%1$s no es un argumento válido para <número de mobs a invocar>",
+	"commands.hordes.SpawnHordeWave.wrongArgCount":"Número incorrecto de argumentos suministrados para /spawnHordeWave",
+	"commands.hordes.StartHorde.usage":"/hordes start <duración del evento>",
+	"commands.hordes.StartHorde.success":"Evento de horda iniciado con éxito por %1$s ticks",
+	"commands.hordes.StartHorde.invalidValue":"%1$s no es un argumento válido para <duración del evento>;",
+	"commands.hordes.StartHorde.wrongArgCount":"Número incorrecto de argumentos suministrados para /startHordeEvent",
+	"commands.hordes.StopHorde.usage":"/hordes stop",
+	"commands.hordes.StopHorde.success":"Evento de horda detenido",
+	"commands.hordes.HordeDebug.usage":"/hordes debug",
+	"commands.hordes.HordeDebug.success":"Registro de horda guardado en %1$s",
+	"commands.hordes.HordeClean.usage":"/clearHordeData",
+	"commands.hordes.HordeClean.success":"Todos los datos de horda del mundo han sido borrados",
+	"commands.hordes.HordeReset.usage":"/hordes reset <opcional: jugador>",
+	"commands.hordes.HordeReset.success":"Datos de horda reiniciados para el jugador %1$s",
+	"commands.hordes.ListEntities.usage":"/hordes listEntities",
+	"commands.hordes.ListEntities.success":"Lista de todas las entidades guardada en %1$s",
+	
+	"commands.hordes.SpawnZombie.usage":"/hordes spawnZombie <nombre de usuario> <pos> <tipo>",
+	
+	"message.hordes.DataError":"Existen errores en los datos cargados actualmente, por favor revisa el archivo %1$s para más información.",
+	
+	"jei.category.hordes.InfectionCures":"Curaciones de infección"
+}

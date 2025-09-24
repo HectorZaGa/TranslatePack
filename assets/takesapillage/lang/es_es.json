@@ -1,0 +1,53 @@
+{
+	"item.takesapillage.archer_spawn_egg": "Generar arquero",
+	"item.takesapillage.skirmisher_spawn_egg": "Generar guerrillero",
+	"item.takesapillage.legioner_spawn_egg": "Generar legionario",
+
+	"item.takesapillage.ravager_horn": "Cuerno de atronador",
+	"item.takesapillage.bastille_blues_music_disc": "Disco de música",
+	"item.takesapillage.bastille_blues_music_disc.desc": "Izofar - bastille blues",
+
+	"entity.takesapillage.clay_golem": "Golem de arcilla",
+	"entity.takesapillage.archer": "Arquero",
+	"entity.takesapillage.skirmisher": "Guerrillero",
+	"entity.takesapillage.legioner": "Legionario",
+
+	"subtitle.takesapillage.entity.clay_golem.attack": "El golem de arcilla ataca",
+	"subtitle.takesapillage.entity.clay_golem.damage": "El golem de arcilla se rompe",
+	"subtitle.takesapillage.entity.clay_golem.death": "El golem de arcilla muere",
+	"subtitle.takesapillage.entity.clay_golem.hurt": "El golem de arcilla se lastima",
+	"subtitle.takesapillage.entity.clay_golem.repair": "El golem de arcilla se repara",
+	"subtitle.takesapillage.entity.clay_golem.step": "El golem de arcilla da pasos",
+
+	"subtitle.takesapillage.entity.legioner.ambient": "El legionario murmura",
+	"subtitle.takesapillage.entity.legioner.celebrate": "El legionario celebra",
+	"subtitle.takesapillage.entity.legioner.death": "El legionario muere",
+	"subtitle.takesapillage.entity.legioner.hurt": "El legionario se lastima",
+
+	"advancements.takesapillage.root.title": "It Takes A Pillage",
+	"advancements.takesapillage.root.description": "¡explora el mundo superior en busca de nuevas estructuras!",
+	"advancements.takesapillage.bastille.title": "Eh-eh-oh, eh-oh",
+	"advancements.takesapillage.bastille.description": "Localiza una bastilla",
+	"advancements.takesapillage.pillager_camp.title": "Canción del campamento de pillagers",
+	"advancements.takesapillage.pillager_camp.description": "Localiza un campamento de pillagers",
+
+	"death.attack.clay_golem": "%1$s fue golpeado por %2$s",
+	"death.attack.clay_golem.item": "%1$s fue golpeado por %2$s usando %3$s",
+	"death.attack.archer": "%1$s fue alcanzado por %2$s",
+	"death.attack.archer.item": "%1$s fue alcanzado por %2$s usando %3$s",
+	"death.attack.skirmisher": "%1$s fue despedazado por %2$s",
+	"death.attack.skirmisher.item": "%1$s fue despedazado por %2$s mientras empuñaba %3$s",
+	"death.attack.legioner": "%1$s fue derribado por %2$s",
+	"death.attack.legioner.item": "%1$s fue derribado por %2$s mientras empuñaba %3$s",
+
+	"takesapillage.configGui.title": "It Takes A Pillage - Configuración",
+	"takesapillage.configGui.replaceIronGolems.title": "Reemplazo de golems de arcilla",
+	"takesapillage.configGui.peacefulGolemRate.title": "Reemplazo de golems de arcilla en dificultad pacífica",
+	"takesapillage.configGui.easyGolemRate.title": "Reemplazo de golems de arcilla en dificultad fácil",
+	"takesapillage.configGui.normalGolemRate.title": "Reemplazo de golems de arcilla en dificultad normal",
+	"takesapillage.configGui.hardGolemRate.title": "Reemplazo de golems de arcilla en dificultad difícil",
+	"takesapillage.configGui.removeBadOmen.title": "La leche elimina el mal presagio",
+	"takesapillage.configGui.pillageSiegesOccur.title": "Ocurrencia de saqueos",
+
+	"instrument.takesapillage.raid_horn": "Cuerno de asedio"
+}

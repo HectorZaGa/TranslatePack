@@ -1,0 +1,37 @@
+{
+  "pack.kac.knives_and_classics.name": "Knives And Classics 2.0",
+  "pack.kac.knives_and_classics.desc": "Knives for everyone!",
+
+  "kac.gun.combat_troodon.name": "Combat Troodon",
+  "kac.gun.combat_troodon.desc": "John Wick's knife of choice.",
+
+  "kac.gun.military_karambit.name": "Military grade Karambit",
+  "kac.gun.military_karambit.desc": "Spinny boi, but serious.",
+
+  "kac.gun.fade_karambit.name": "Fade Karambit",
+  "kac.gun.fade_karambit.desc": "Fade them out!",
+
+  "kac.gun.m9.name": "M9 Knife",
+  "kac.gun.m9.desc": "No handheld M9 for TACZ? Fine, I will do it myself.",
+
+  "kac.gun.kraken_tanto.name": "Krake Raken Tanto",
+  "kac.gun.kraken_tanto.desc": "Spin it now, stab 'em later.",
+
+  "kac.gun.recon_balisong.name": "Recon Butterfly Knife",
+  "kac.gun.recon_balisong.desc": "I'm not a Valorant fanboy, I just like the knife.",
+
+  "kac.gun.stealth_tracker.name": "Stealth Tracker",
+  "kac.gun.stealth_tracker.desc": "Modeled by ifibers, big thanks to him.",
+
+  "kac.gun.fade_balisong.name": "Fade Butterfly Knife",
+  "kac.gun.fade_balisong.desc": "Quite a spinny fade right there.",
+
+  "kac.gun.alpha_beast.name": "BRS Alpha Beast",
+  "kac.gun.alpha_beast.desc": "It may be a bit small, but totally does the job well.",
+
+
+
+
+  "kac.attachment.knife_animator_1.name": "Knife Animator",
+  "kac.attachment.knife_animator_1.desc": "You must add this to knives to display animations and deal damage."
+}

@@ -1,0 +1,34 @@
+{
+  "pack.kac.knives_and_classics.name": "Knives And Classics 2.0",
+  "pack.kac.knives_and_classics.desc": "¡Cuchillos para todos!",
+
+  "kac.gun.combat_troodon.name": "Troodon de combate",
+  "kac.gun.combat_troodon.desc": "El cuchillo preferido de John Wick.",
+
+  "kac.gun.military_karambit.name": "Karambit de grado militar",
+  "kac.gun.military_karambit.desc": "Spinny boi, pero serio.",
+
+  "kac.gun.fade_karambit.name": "Karambit Fade",
+  "kac.gun.fade_karambit.desc": "¡Desaparece con estilo!",
+
+  "kac.gun.m9.name": "Cuchillo M9",
+  "kac.gun.m9.desc": "¿No hay M9 portátil para TACZ? Bien, lo haré yo mismo.",
+
+  "kac.gun.kraken_tanto.name": "Krake Raken Tanto",
+  "kac.gun.kraken_tanto.desc": "Gíralo ahora, apuñálalos después.",
+
+  "kac.gun.recon_balisong.name": "Cuchillo mariposa de reconocimiento",
+  "kac.gun.recon_balisong.desc": "No soy fan de Valorant, solo me gusta el cuchillo.",
+
+  "kac.gun.stealth_tracker.name": "Rastreador sigiloso",
+  "kac.gun.stealth_tracker.desc": "Modelado por ifibers, muchas gracias a él.",
+
+  "kac.gun.fade_balisong.name": "Cuchillo mariposa Fade",
+  "kac.gun.fade_balisong.desc": "Un fade bastante giratorio.",
+
+  "kac.gun.alpha_beast.name": "BRS Alpha Beast",
+  "kac.gun.alpha_beast.desc": "Puede ser un poco pequeño, pero hace el trabajo bien.",
+
+  "kac.attachment.knife_animator_1.name": "Animador de cuchillos",
+  "kac.attachment.knife_animator_1.desc": "Debes agregar esto a los cuchillos para mostrar animaciones y causar daño."
+}

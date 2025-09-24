@@ -1,0 +1,36 @@
+{
+    "attribute.cataclysm_spellbooks.abyssal_magic_resist": "Resistencia a la magia abisal",
+    "attribute.cataclysm_spellbooks.abyssal_spell_power": "Poder de magia abisal",
+
+    "school.cataclysm_spellbooks.abyssal": "Abisal",
+
+
+    "item.cataclysm_spellbooks.abyss_spell_book": "Libro de R'lyeh",
+    "item.cataclysm_spellbooks.desert_spell_book": "Libro de hechizos del desierto",
+    "item.cataclysm_spellbooks.ignis_spell_book": "Libro de hechizos de ignitio",
+
+    "item.cataclysm_spellbooks.bloom_stone_staff": "Bastón de piedra floreciente",
+    "item.cataclysm_spellbooks.coral_staff": "Bastón coral",
+    "item.cataclysm_spellbooks.fake_wudjets_staff": "Bastón falso de Wudjet",
+    "item.cataclysm_spellbooks.void_staff": "Bastón del vacío",
+
+    "item.cataclysm_spellbooks.ignis_helmet": "Casco de mago de ignitio",
+    "item.cataclysm_spellbooks.ignis_chestplate": "Túnica de mago de ignitio",
+    "item.cataclysm_spellbooks.ignis_leggings": "Pantalones de mago de ignitio",
+    "item.cataclysm_spellbooks.ignis_boots": "Botas de mago de ignitio",  
+
+
+    "spell.cataclysm_spellbooks.void_beam": "Rayo abisal",
+    "spell.cataclysm_spellbooks.void_beam.guide": "Lanza un rayo abisal hacia tu objetivo elegido",
+
+    "spell.cataclysm_spellbooks.void_rune": "Conjuro: Runa del vacío",
+    "spell.cataclysm_spellbooks.void_rune.guide": "Lanza una runa del vacío hacia tu objetivo elegido",
+
+    "spell.cataclysm_spellbooks.dimensional_rift": "Grieta dimensional",
+    "spell.cataclysm_spellbooks.dimensional_rift.guide": "Invoca un grieta dimensional",
+
+
+    "ui.cataclysm_spellbooks.void_beam": "Invoca un rayo abisal similar al de los Deeplin brujos",
+    "ui.cataclysm_spellbooks.void_rune": "Invoca una runa del vacío en la ubicación de tu objetivo",
+    "ui.cataclysm_spellbooks.dimensional_rift_spell.lifespan": "Invoca una grieta dimensional que dura"
+}

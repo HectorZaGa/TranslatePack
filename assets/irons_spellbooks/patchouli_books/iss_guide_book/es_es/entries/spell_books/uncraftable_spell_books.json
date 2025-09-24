@@ -1,0 +1,31 @@
+{
+  "name": "Libros Nombrados",
+  "icon": "irons_spellbooks:evoker_spell_book",
+  "category": "irons_spellbooks:root",
+  "sortnum": 2,
+  "read_by_default" : true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Libros de hechizos no fabricables",
+      "text": "Armaduras, armas, adornos y, por supuesto, libros de hechizos, todos están dispersos por el mundo, esperando que los explores y los encuentres."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Libros de hechizos únicos",
+      "item": "irons_spellbooks:arcane_anvil",
+      "text": "Los libros de hechizos únicos son gotas raras de ciertos monstruos que vienen con hechizos inscritos, que no se pueden quitar ni editar. No todos los libros de hechizos se pueden fabricar -- después de todo, se llama el arte arcana."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:evoker_spell_book",
+      "text": "Un libro lleno de la magia fundacional de los illagers, el Grimorio de Evocación puede ser obtenido al derrotar a los Evocadores o a su primo más poderoso, los Archevocadores."
+},
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:necronomicon_spell_book",
+      "text": "Un libro antiguo que contiene una serie de hechizos oscuros, solo se puede adquirir quitándoselo a su dueño no muerto."
+    }
+
+  ]
+}

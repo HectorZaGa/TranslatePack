@@ -1,0 +1,23 @@
+{
+  "gamerule.flameBurst": "flameBurst",
+  "entity.mutantsbuff.explosion": "Explosion",
+  "item_group.mutantsbuff.mutants_buff": "Mutants Buff",
+  "entity.mutantsbuff.shockwaves": "Shockwave",
+  "entity.mutantsbuff.stable_explosion": "Explosion",
+  "gamerule.mutantEndermanRegenerate": "mutantEndermanRegenerate",
+  "key.mutantsbuff.shift": "Shift",
+  "gamerule.mutantEndermanRegenerate.description": "if false mutant enderman won\u0027t regenerate hp",
+  "enchantment.mutantsbuff.smasher": "Smasher",
+  "item.mutantsbuff.mutant_charged_creeper_spawn_egg": "Mutant Charged Creeper Spawn Egg",
+  "item.mutantsbuff.charged_hammer": "Charged Hammer",
+  "effect.mutantsbuff.moon_regeneration": "Moon Regeneration",
+  "effect.superme.regeneration": "Regeneration",
+  "gamerule.flameBurst.description": "customize flameBurst distance",
+  "item.mutantsbuff.flame_orb": "Flame Orb",
+  "enchantment.mutantsbuff.quick": "Quick",
+  "entity.mutantsbuff.invul": "Mutant Enderman",
+  "item.mutantsbuff.upgraded_hulk_hammer": "Flame Burst Hammer",
+  "effect.mutantsbuff.regeneration": "Regeneration",
+  "entity.mutantsbuff.shockwave": "Shockwave",
+  "key.mutantsbuff.shift_is_placed": "Shift Is Placed"
+}

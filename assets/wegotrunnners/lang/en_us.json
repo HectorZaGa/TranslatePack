@@ -1,0 +1,21 @@
+{
+  "effect.wegotrunnners.groundertmp": "Grounder Zombie",
+  "effect.groundertmp": "Grounder Zombie",
+  "effect.normalzombietmp": "Walker",
+  "effect.runnerspreads": "Runner Spread",
+  "effect.aggrozom": "aggro_zomn",
+  "effect.wegotrunnners.runnerzombieeff": "Zombie Perks",
+  "block.wegotrunnners.test": "Test",
+  "effect.runertmp": "Runner Zombie",
+  "effect.wegotrunnners.grounded": "Grounded",
+  "effect.runnerzombieeff": "Zombie Perks",
+  "effect.grounded": "Grounded",
+  "effect.wegotrunnners.runertmp": "Runner Zombie",
+  "effect.wegotrunnners.normalzombietmp": "Walker",
+  "config.wegotrunnners.wegorrunnersconfig": "wegotrunnersconfig",
+  "effect.wegotrunnners.aggrozom": "aggro_zomn",
+  "subtitles.iron_crit": "Grounder Iron golem Criticall Hit",
+  "effect.wegotrunnners.runnerspreads": "Runner Spread",
+  "config.wegotrunnners.wegotrunnerclientconfig": "wegotrunnersconfigclient",
+  "subtitles.stuncrit": "Grounder Stun Hit"
+}

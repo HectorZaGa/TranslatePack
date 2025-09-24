@@ -1,0 +1,21 @@
+{
+    "item.ice_and_fire_spellbooks.dragonmancers_oathbook": "Libro de juramento del maestro dragón",
+    "item.ice_and_fire_spellbooks.dragon_priest_staff": "Cetro del sacerdote dragón",
+
+    "item.ice_and_fire_spellbooks.fire_dragon_priest_helmet": "Casco del sacerdote dragón de fuego",
+    "item.ice_and_fire_spellbooks.fire_dragon_priest_chestplate": "Túnica del sacerdote dragón de fuego",
+    "item.ice_and_fire_spellbooks.fire_dragon_priest_leggings": "Pantalones del sacerdote dragón de fuego",
+    "item.ice_and_fire_spellbooks.fire_dragon_priest_boots": "Botas del sacerdote dragón de fuego",
+
+    "item.ice_and_fire_spellbooks.ice_dragon_priest_helmet": "Casco del sacerdote dragón de hielo",
+    "item.ice_and_fire_spellbooks.ice_dragon_priest_chestplate": "Túnica del sacerdote dragón de hielo",
+    "item.ice_and_fire_spellbooks.ice_dragon_priest_leggings": "Pantalones del sacerdote dragón de hielo",
+    "item.ice_and_fire_spellbooks.ice_dragon_priest_boots": "Botas del sacerdote dragón de hielo",
+
+    "item.ice_and_fire_spellbooks.lightning_dragon_priest_helmet": "Casco del sacerdote dragón eléctrico",
+    "item.ice_and_fire_spellbooks.lightning_dragon_priest_chestplate": "Túnica del sacerdote dragón eléctrico",
+    "item.ice_and_fire_spellbooks.lightning_dragon_priest_leggings": "Pantalones del sacerdote dragón eléctrico",
+    "item.ice_and_fire_spellbooks.lightning_dragon_priest_boots": "Botas del sacerdote dragón eléctrico",
+
+    "tab.ice_and_fire_spellbooks.armor": "Ice and Fire: Spellbooks"
+}
