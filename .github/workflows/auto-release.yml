@@ -249,6 +249,14 @@ jobs:
           cp "$file" "$target_dir/"
         done
         
+        # Find and copy all es_es.json files from journal_lang folders
+        find assets -name "es_es.json" -path "*/journal_lang/*" | while read file; do
+          # Create directory structure maintaining hierarchy
+          target_dir="translation-pack/$(dirname "$file")"
+          mkdir -p "$target_dir"
+          cp "$file" "$target_dir/"
+        done
+        
         # Find and copy patchouli_books/*/es_es/ files if they exist
         find assets -path "*/patchouli_books/*/es_es/*" -type f | while read file; do
           # Create directory structure maintaining hierarchy

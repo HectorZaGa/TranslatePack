@@ -1,0 +1,19 @@
+{
+  "key.categories.mns_extras": "MnS Extras",
+  "item.mns_extras.bounty_slip": "Nota de recompensa",
+  "item.mns_extras.empowered_bounty_slip": "Nota de recompensa potenciada",
+  "itemGroup.mns_extras": "MnS Extras",
+  "key.mns_extras.open_profession_shop": "Abrir tienda de profesión",
+  "gui.mns_extras.profession_shop.title": "Tienda de profesión",
+  "gui.mns_extras.profession_shop.cost": "Coste: %s x %s",
+  "gui.mns_extras.profession_shop.required": "Requerido: %s Nivel %s",
+  "profession.farming": "Agricultura",
+  "profession.mining": "Minería",
+  "profession.husbandry": "Cazarrecompensas",
+  "profession.fishing": "Pesca",
+  "profession.cooking": "Cocina",
+  "profession.alchemy": "Alquimia",
+  "profession.enchanting": "Infusión",
+  "profession.gear_crafting": "Fabricación de equipamiento",
+  "profession.salvaging": "Reciclaje"
+}

@@ -1,0 +1,14 @@
+{
+	"auto_repair_kit.name": "Auto Repair Kits",
+	
+	"item.auto_repair_kit.leather_kit": "Kit de reparación de cuero",
+	"item.auto_repair_kit.iron_kit": "Kit de reparación de hierro",
+	"item.auto_repair_kit.gold_kit": "Kit de reparación de oro",
+	"item.auto_repair_kit.diamond_kit": "Kit de reparación de diamante",
+	"item.auto_repair_kit.netherite_kit": "Kit de reparación de netherita",
+
+	"auto_repair_kit.charges": "Cargas: %1$s / %2$s",
+	"auto_repair_kit.charge_mats": "Objetos que pueden cargar el kit:",
+	"auto_repair_kit.press_shift": "Presiona [Mayús.] para ver cómo cargar el kit."
+
+}

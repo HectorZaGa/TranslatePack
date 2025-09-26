@@ -1,0 +1,58 @@
+{
+	"command.solonion.no_permissions": "¡No tienes los permisos necesarios para aplicar este comando a otros jugadores!",
+
+	"command.solonion.clear.success": "¡Lista de alimentos reiniciada!",
+	"command.solonion.diversity_feedback": "Diversidad alimenticia: %.2f",
+	"command.solonion.sync.success": "¡Lista de alimentos sincronizada!",
+	"command.solonion.origin.invalidated": "¡Origen en caché del jugador reiniciado!",
+	"command.solonion.origin.cleared": "¡Todos los orígenes en caché eliminados!",
+	"command.solonion.origin.inapplicable": "El mod Origins no está instalado. Los datos de origen se han eliminado de todos modos.",
+
+	"item.solonion.food_book": "Libro de alimentos",
+	"item.solonion.lunchbox": "Fiambrera",
+	"item.solonion.container.lunchbox": "Fiambrera",
+	"item.solonion.golden_lunchbox": "Fiambrera de oro",
+	"item.solonion.container.golden_lunchbox": "Fiambrera de oro",
+	"item.solonion.lunchbag": "Bolsa de almuerzo",
+	"item.solonion.container.lunchbag": "Bolsa de almuerzo",
+	
+	"item.solonion.container.open": "%s + %s para abrir",
+
+	"key.solonion.open_food_book": "Abrir libro de alimentos",
+	"key.solonion.category": "Spice of Life Onion",
+
+	"gui.solonion.food_book.stats": "Resumen",
+	"gui.solonion.food_book.stats.current_diversity": "Diversidad actual",
+	"gui.solonion.food_book.stats.min_warning1": "Necesitas comer %d veces más",
+	"gui.solonion.food_book.stats.min_warning2": "para activar beneficios",
+	"gui.solonion.food_book.active_benefits_header": "Beneficios activos",
+	"gui.solonion.food_book.inactive_benefits_header": "Beneficios inactivos",
+	"gui.solonion.food_book.benefits.threshold_label": "Umbral",
+	"gui.solonion.food_book.benefits.active_tooltip": "Debido a que tu diversidad alimentaria es mayor que este umbral, este beneficio está activo.",
+	"gui.solonion.food_book.benefits.inactive_tooltip": "Si tu diversidad alimentaria se vuelve mayor que este umbral, este beneficio se activará.",
+	"gui.solonion.food_book.food_queue_label": "Comida consumida",
+	"gui.solonion.food_book.food_queue_tooltip": "Una lista de todos los alimentos consumidos en el pasado que contribuyen a tu diversidad alimentaria.",
+
+	"gui.solonion.food_book.fraction": "%1$s/%2$s",
+
+	"gui.solonion.tooltip.disabled": "Este alimento no contribuye a la diversidad alimentaria.",
+	"gui.solonion.tooltip.diversity": "Diversidad",
+	"gui.solonion.tooltip.last_eaten": "Consumido hace %d comidas",
+	"gui.solonion.tooltip.last_eaten_singular": "Consumido hace %d comida",
+	
+	"config.solonion.att": "Atributo",
+	"config.solonion.eff": "Efecto",
+	
+	"config.solonion.addition": "Adición",
+	"config.solonion.multiply_base": "Multiplicar base",
+	"config.solonion.multiply_total": "Multiplicar total",
+	
+	"config.solonion.trackCount.comment": "Cuántos alimentos deben ser rastreados.\nTen en cuenta que cuanto mayor sea este valor, mayor será tu valor de diversidad potencial, así que tenlo presente\nsi estás definiendo umbrales/beneficios personalizados arriba.",
+	"config.solonion.minFoodsToActivate.comment": "El número mínimo de alimentos que un jugador necesita comer antes de que se apliquen los beneficios.",
+	
+	"config.solonion.complexityStandardNutrition.comment": "Por defecto, este es el valor de nutrición del pan.\nCada alimento se compara con él y se calcula en consecuencia.",
+	"config.solonion.complexityStandardSaturation.comment": "Por defecto, este es el valor de saturación del pan.\nCada alimento se compara con él y se calcula en consecuencia.",
+	"config.solonion.complexityBenefitEffectModifier.comment": "Cuánta complejidad se añade por efecto positivo (incluyendo el nivel) al alimento.\nSe considerará la probabilidad del efecto.",
+	"config.solonion.complexityNeutralEffectModifier.comment": "Cuánta complejidad se añade por efecto neutral (incluyendo el nivel) al alimento.\nSe considerará la probabilidad del efecto.",
+	"config.solonion.complexityHarmEffectModifier.comment": "Cuánta complejidad se añade por efecto negativo (incluyendo el nivel) al alimento.\nSe considerará la probabilidad del efecto."
+}

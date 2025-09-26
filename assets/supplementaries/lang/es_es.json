@@ -335,9 +335,9 @@
   "gui.supplementaries.amendments.title": "Advertencia: amendments no está instalado",
   "gui.supplementaries.incompatible_mods.title": "Advertencia: Mods incompatibles encontrados",
   "gui.supplementaries.incompatible_mods.message": "Supplementaries ha detectado los siguientes mods que se sabe que causan fallos:\n\n %s\n\nEstos problemas no pueden ser solucionados por supplementaries ya que provienen de estos mods.\nPor favor, elimínelos o tenga en cuenta posibles fallos aleatorios. Si cree que este problema ha sido resuelto, por favor contáctenos.",
-  
 
-  
+
+
   "gui.supplementaries.blackboard.clear": "Borrar",
   "gui.supplementaries.blackboard.undo": "Deshacer",
   "gui.supplementaries.blackboard.edit": "Editar pizarra",
@@ -437,6 +437,7 @@
 
 
   "message.supplementaries.altimeter": "Y: %d",
+  "message.supplementaries.cannon": "Puede disparar cualquier cosa",
   "message.supplementaries.argument.instrument.invalid": "El instrumento debe ser uno de %1$s, encontrado %2$s",
   "message.supplementaries.argument.source.invalid": "La fuente debe ser una de %1$s, encontrada %2$s",
   "message.supplementaries.blackboard": "Patrón fijado",

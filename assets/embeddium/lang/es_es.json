@@ -1,5 +1,9 @@
 {
   "embeddium.conflicting_mod": "Embeddium ha detectado la presencia de mods que se sabe que causan problemas de renderizado o fallos. Se recomienda desinstalarlos. Consulte la lista a continuación.",
   "embeddium.conflicting_mod_list": "[{2}]",
-  "embeddium.search_bar_empty": "Buscar opciones..."
+  "embeddium.search_bar_empty": "Buscar opciones...",
+  "embeddium.options.added_by_mod_string": "Añadido por el mod: %s",
+  "embeddium.options.fullscreen.resolution.tooltip": "Controla la resolución del juego en modo pantalla completa.",
+  "embeddium.options.use_quad_normals_for_lighting.name": "Usar sombreado cuadrado preciso",
+  "embeddium.options.use_quad_normals_for_lighting.tooltip": "Cuando está habilitado, Embeddium aplicará sombreado a las caras de bloques no vanilla según la verdadera dirección en la que están mirando, no su dirección alineada con el eje. Esto puede mejorar la calidad de la iluminación cuando la tubería de luz experimental de Forge está deshabilitada (lo cual se recomienda para un mejor rendimiento).\n\nNo tiene efecto si la tubería de luz experimental está habilitada."
 }

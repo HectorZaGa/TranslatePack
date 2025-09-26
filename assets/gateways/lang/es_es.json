@@ -11,10 +11,10 @@
 	"tooltip.gateways.dot_with_count": "• %s %s",
 	"tooltip.gateways.dot": "• %s",
 
-	"tooltip.gateways.scroll": "[desplazar]",
-	"tooltip.gateways.shift": "[mayús.]",
-	"tooltip.gateways.ctrl": "[ctrl]",
-	"tooltip.gateways.alt": "[alt]",
+	"tooltip.gateways.scroll": "[Desplazar]",
+	"tooltip.gateways.shift": "[Mayús.]",
+	"tooltip.gateways.ctrl": "[Ctrl]",
+	"tooltip.gateways.alt": "[Alt]",
 	"tooltip.gateways.true": "Activado",
 	"tooltip.gateways.false": "Desactivado",
 

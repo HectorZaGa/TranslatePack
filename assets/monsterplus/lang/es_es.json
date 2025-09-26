@@ -1,0 +1,39 @@
+{
+"entity.monsterplus.abyssologer" : "Abisólogo",
+"entity.monsterplus.glow_skeleton" : "Esqueleto brillante",
+"entity.monsterplus.swamp_zombie" : "Monstruo del pantano",
+"entity.monsterplus.opalescent_eye" : "Ojo opalescente",
+"entity.monsterplus.spectral_skeleton" : "Esbirro espectral",
+"entity.monsterplus.lava_squid" : "Calamar de lava",
+"entity.monsterplus.mother_lava_squid" : "Madre calamar de lava",
+"entity.monsterplus.crystal_zombie" : "Cristaliano",
+"entity.monsterplus.overgrown_skeleton" : "Esqueleto cubierto de maleza",
+
+"entity.monsterplus.crystal_spikes" : "Púas de cristal",
+"entity.monsterplus.purple_fireball" : "Bola de fuego abisal",
+"entity.monsterplus.crystal_arrow" : "Flecha de cristal",
+
+"item.monsterplus.crystal_shard" : "Fragmento de cristal antiguo",
+"item.monsterplus.ancient_crystal" : "Cristal antiguo",
+
+"item.monsterplus.crystal_sword" : "Espada de cristal antiguo",
+"item.monsterplus.darkstar" : "Estrella oscura",
+"item.monsterplus.gnawing_jaw" : "Mandíbula roedora",
+"item.monsterplus.crystal_helmet" : "Casco de cristal antiguo",
+"item.monsterplus.crystal_leggings" : "Grebas de cristal antiguo",
+"item.monsterplus.crystal_boots" : "Botas de cristal antiguo",
+"item.monsterplus.crystal_chestplate" : "Pechera de cristal antiguo",
+"item.monsterplus.crystal_arrow" : "Flecha de cristal",
+"item.monsterplus.crystal_clump" : "Grupo de cristales",
+
+"item.monsterplus.abyssologer_spawn_egg" : "Generar abisólogo",
+"item.monsterplus.glow_skeleton_spawn_egg" : "Generar esqueleto brillante",
+"item.monsterplus.swamp_zombie_spawn_egg" : "Generar monstruo del pantano",
+"item.monsterplus.opalescent_eye_spawn_egg" : "Generar ojo opalescente",
+"item.monsterplus.spectral_skeleton_spawn_egg" : "Generar esbirro espectral",
+"item.monsterplus.lava_squid_spawn_egg" : "Generar calamar de lava",
+"item.monsterplus.mother_lava_squid_spawn_egg" : "Generar madre calamar de lava",
+"item.monsterplus.crystal_zombie_spawn_egg" : "Generar cristaliano",
+"item.monsterplus.overgrown_skeleton_spawn_egg" : "Generar esqueleto cubierto de maleza"
+
+}
