@@ -19,290 +19,55 @@ jobs:
       with:
         fetch-depth: 0  # Required to get all repository information
     
-    - name: Get tag name
-      id: tag
-      run: echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-    
-    - name: Get repository name
-      id: repo
-      run: echo "name=${GITHUB_REPOSITORY##*/}" >> $GITHUB_OUTPUT
-    
-    - name: Get branch name
-      id: branch
+    - name: Get tag and repository info
+      id: info
       run: |
-        # Get the branch from which the tag was created
-        BRANCH=$(git branch -r --contains ${{ steps.tag.outputs.tag }} | head -1 | sed 's/.*\///')
-        echo "name=${BRANCH}" >> $GITHUB_OUTPUT
+        TAG_NAME=${GITHUB_REF#refs/tags/}
+        REPO_NAME=${GITHUB_REPOSITORY##*/}
+        BRANCH=$(git branch -r --contains $TAG_NAME | head -1 | sed 's/.*\///')
+        RENAMED_TAG="${BRANCH}-${TAG_NAME}"
+        
+        echo "tag=$TAG_NAME" >> $GITHUB_OUTPUT
+        echo "repo=$REPO_NAME" >> $GITHUB_OUTPUT  
+        echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+        echo "renamed_tag=$RENAMED_TAG" >> $GITHUB_OUTPUT
+        
+        echo "Original tag: $TAG_NAME"
+        echo "Repository: $REPO_NAME"
+        echo "Branch: $BRANCH"
+        echo "Renamed tag: $RENAMED_TAG"
     
-    - name: Rename tag with branch prefix
-      id: rename_tag
-      run: |
-        ORIGINAL_TAG="${{ steps.tag.outputs.tag }}"
-        BRANCH_NAME="${{ steps.branch.outputs.name }}"
-        NEW_TAG="${BRANCH_NAME}-${ORIGINAL_TAG}"
-        
-        echo "Original tag: $ORIGINAL_TAG"
-        echo "Branch: $BRANCH_NAME" 
-        echo "New tag name: $NEW_TAG"
-        
-        # Configure git for pushing
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # Check if the new tag already exists
-        if git rev-parse "$NEW_TAG" >/dev/null 2>&1; then
-          echo "Tag $NEW_TAG already exists, skipping rename"
-          echo "final_tag=$ORIGINAL_TAG" >> $GITHUB_OUTPUT
-          echo "should_delete_original=false" >> $GITHUB_OUTPUT
-        else
-          echo "Creating new tag: $NEW_TAG"
-          
-          # Create new tag pointing to the same commit as original tag
-          git tag "$NEW_TAG" "$ORIGINAL_TAG"
-          
-          # Push the new tag
-          echo "Pushing new tag to remote..."
-          git push origin "$NEW_TAG"
-          
-          echo "Tag $NEW_TAG created successfully"
-          echo "final_tag=$NEW_TAG" >> $GITHUB_OUTPUT
-          echo "should_delete_original=true" >> $GITHUB_OUTPUT
-        fi
-    
-    - name: Generate changelog
-      id: changelog
-      run: |
-        # Get previous tag to compare changes (chronologically, not alphabetically)
-        CURRENT_TAG="${{ steps.rename_tag.outputs.final_tag }}"
-        
-        # Get all tags sorted by creation date (newest first), find current tag, then get the next one
-        ALL_TAGS=$(git tag --sort=-creatordate)
-        echo "All tags (by creation date): $ALL_TAGS"
-        
-        PREVIOUS_TAG=""
-        FOUND_CURRENT=false
-        for tag in $ALL_TAGS; do
-          if [ "$tag" = "$CURRENT_TAG" ]; then
-            FOUND_CURRENT=true
-            continue
-          fi
-          if [ "$FOUND_CURRENT" = true ]; then
-            PREVIOUS_TAG="$tag"
-            break
-          fi
-        done
-        
-        echo "Previous tag: $PREVIOUS_TAG"
-                echo "Current tag: $CURRENT_TAG"
-        
-        # If no previous tag, use the first commit
-        if [ -z "$PREVIOUS_TAG" ]; then
-          PREVIOUS_TAG=$(git rev-list --max-parents=0 HEAD)
-        fi
-        
-        echo "Comparing from: $PREVIOUS_TAG to: $CURRENT_TAG"
-        
-        # Analyze added, modified and deleted files
-        NEW_MODS=""
-        NEW_TRANSLATIONS=""
-        FIXES=""
-        
-        # Get changed files
-        CHANGED_FILES=$(git diff --name-status "$PREVIOUS_TAG..$CURRENT_TAG" -- assets/ | grep -E '\.(json)$' || true)
-        
-        echo "Changed files:"
-        echo "$CHANGED_FILES"
-        
-        # Analyze new mods with improved validation
-        echo "=== DEBUGGING NEW MODS DETECTION ==="
-        echo "Previous tag: $PREVIOUS_TAG"
-        echo "Current tag: $CURRENT_TAG"
-        
-        # Verify both tags exist
-        if ! git rev-parse "$PREVIOUS_TAG" >/dev/null 2>&1; then
-          echo "ERROR: Previous tag '$PREVIOUS_TAG' does not exist!"
-          echo "Available tags:"
-          git tag -l | head -10
-        fi
-        
-        if ! git rev-parse "$CURRENT_TAG" >/dev/null 2>&1; then
-          echo "ERROR: Current tag '$CURRENT_TAG' does not exist!"
-        fi
-        
-        # Show complete diff for debugging
-        echo "=== COMPLETE DIFF STATUS ==="
-        git diff --name-status "$PREVIOUS_TAG..$CURRENT_TAG" -- assets/ || echo "Diff failed"
-        
-        # Use git diff to find only newly added es_es.json files
-        echo "=== FILTERING FOR NEW ES_ES.JSON FILES ==="
-        NEW_ES_FILES=$(git diff --name-status "$PREVIOUS_TAG..$CURRENT_TAG" -- assets/ | grep -E '^A\s+.*es_es\.json$' | grep '/lang/' | awk '{print $2}' || true)
-        echo "Raw new files output:"
-        echo "'$NEW_ES_FILES'"
-        
-        # Double-check: verify these files actually didn't exist in previous tag
-        if [ -n "$NEW_ES_FILES" ]; then
-          echo "=== VALIDATING TRULY NEW FILES ==="
-          TRULY_NEW_FILES=""
-          for file in $NEW_ES_FILES; do
-            if git show "$PREVIOUS_TAG:$file" >/dev/null 2>&1; then
-              echo "WARNING: $file existed in previous tag - not truly new"
-            else
-              echo "CONFIRMED: $file is truly new"
-              TRULY_NEW_FILES="$TRULY_NEW_FILES $file"
-            fi
-          done
-          
-          if [ -n "$TRULY_NEW_FILES" ]; then
-            NEW_MOD_NAMES=$(echo "$TRULY_NEW_FILES" | tr ' ' '\n' | grep -v '^$' | cut -d'/' -f2 | sort -u)
-            echo "Truly new mod names: $NEW_MOD_NAMES"
-            
-            # Build the NEW_MODS list
-            for mod in $NEW_MOD_NAMES; do
-              echo "Adding to new mods: $mod"
-              if [ -z "$NEW_MODS" ]; then
-                NEW_MODS="- **$mod**"
-              else
-                NEW_MODS="$NEW_MODS"$'\n'"- **$mod**"
-              fi
-            done
-          else
-            echo "No truly new mods found after validation"
-          fi
-        else
-          echo "No new es_es.json files detected by git diff"
-        fi
-        echo "=== END DEBUG ==="
-        
-        # Analyze translation changes (modified files)
-        echo "$CHANGED_FILES" | while IFS=$'\t' read -r status file; do
-          if [[ "$file" == *"es_es.json" ]] && [[ "$status" == "M" ]]; then
-            mod_name=$(echo "$file" | cut -d'/' -f2)
-            # Count added and removed lines
-            LINES_ADDED=$(git diff "$PREVIOUS_TAG..$CURRENT_TAG" -- "$file" | grep -c '^+[^+]' || echo "0")
-            LINES_REMOVED=$(git diff "$PREVIOUS_TAG..$CURRENT_TAG" -- "$file" | grep -c '^-[^-]' || echo "0")
-            
-            if [ "$LINES_ADDED" -gt 0 ] || [ "$LINES_REMOVED" -gt 0 ]; then
-              CHANGE_DESC=""
-              if [ "$LINES_ADDED" -gt "$LINES_REMOVED" ]; then
-                NET_ADDED=$((LINES_ADDED - LINES_REMOVED))
-                CHANGE_DESC="**$mod_name**: +$NET_ADDED translation lines"
-              elif [ "$LINES_REMOVED" -gt "$LINES_ADDED" ]; then
-                NET_REMOVED=$((LINES_REMOVED - LINES_ADDED))
-                CHANGE_DESC="**$mod_name**: Fixed $NET_REMOVED lines"
-              else
-                CHANGE_DESC="**$mod_name**: $LINES_ADDED lines updated"
-              fi
-              
-              # Determine if it's new translation or fix
-              if [ "$LINES_ADDED" -gt "$LINES_REMOVED" ]; then
-                if [ -z "$NEW_TRANSLATIONS" ]; then
-                  NEW_TRANSLATIONS="$CHANGE_DESC"
-                else
-                  NEW_TRANSLATIONS="$NEW_TRANSLATIONS"$'\n'"$CHANGE_DESC"
-                fi
-              else
-                if [ -z "$FIXES" ]; then
-                  FIXES="$CHANGE_DESC"
-                else
-                  FIXES="$FIXES"$'\n'"$CHANGE_DESC"
-                fi
-              fi
-            fi
-          fi
-        done < <(echo "$CHANGED_FILES")
-        
-        # Save results to output variables
-        if [ -n "$NEW_MODS" ]; then
-          echo "new_mods<<EOF" >> $GITHUB_OUTPUT
-          echo "$NEW_MODS" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-        fi
-        
-        if [ -n "$NEW_TRANSLATIONS" ]; then
-          echo "new_translations<<EOF" >> $GITHUB_OUTPUT
-          echo "$NEW_TRANSLATIONS" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-        fi
-        
-        if [ -n "$FIXES" ]; then
-          echo "fixes<<EOF" >> $GITHUB_OUTPUT
-          echo "$FIXES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-        fi
-    
-    - name: Create translation pack directory
-      run: |
-        mkdir -p translation-pack
-        
-        # Copy pack.mcmeta and pack.png
-        cp pack.mcmeta translation-pack/
-        cp pack.png translation-pack/
-        
-        # Create assets structure
-        mkdir -p translation-pack/assets
-        
-        # Find and copy all es_es.json files from lang folders
-        find assets -name "es_es.json" -path "*/lang/*" | while read file; do
-          # Create directory structure maintaining hierarchy
-          target_dir="translation-pack/$(dirname "$file")"
-          mkdir -p "$target_dir"
-          cp "$file" "$target_dir/"
-        done
-        
-        # Find and copy all es_es.json files from journal_lang folders
-        find assets -name "es_es.json" -path "*/journal_lang/*" | while read file; do
-          # Create directory structure maintaining hierarchy
-          target_dir="translation-pack/$(dirname "$file")"
-          mkdir -p "$target_dir"
-          cp "$file" "$target_dir/"
-        done
-        
-        # Find and copy patchouli_books/*/es_es/ files if they exist
-        find assets -path "*/patchouli_books/*/es_es/*" -type f | while read file; do
-          # Create directory structure maintaining hierarchy
-          target_dir="translation-pack/$(dirname "$file")"
-          mkdir -p "$target_dir"
-          cp "$file" "$target_dir/"
-        done
-        
-        # Find and copy bestiary/es_es_0/ files if they exist
-        find assets -path "*/lang/bestiary/es_es_0/*" -type f | while read file; do
-          # Create directory structure maintaining hierarchy
-          target_dir="translation-pack/$(dirname "$file")"
-          mkdir -p "$target_dir"
-          cp "$file" "$target_dir/"
-        done
-        
-        echo "Translation pack contents:"
-        find translation-pack -type f | sort
-    
-    - name: Create ZIP file
-      run: |
-        BRANCH_UPPER=$(echo "${{ steps.branch.outputs.name }}" | tr '[:lower:]' '[:upper:]')
-        ZIP_NAME="${{ steps.repo.outputs.name }}-${BRANCH_UPPER}-${{ steps.tag.outputs.tag }}.zip"
-        cd translation-pack
-        zip -r "../$ZIP_NAME" .
-        cd ..
-        echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
-        echo "ZIP file created: $ZIP_NAME"
-        echo "File size: $(ls -lh "$ZIP_NAME" | awk '{print $5}')"
-    
-    - name: Create Release
-      uses: softprops/action-gh-release@v1
+    - name: Create renamed tag
+      uses: rickstaa/action-create-tag@v1
+      id: create_tag
       with:
-        tag_name: ${{ steps.rename_tag.outputs.final_tag }}
-        name: Translate [${{ steps.branch.outputs.name }}] ${{ steps.tag.outputs.tag }}
+        tag: "${{ steps.info.outputs.renamed_tag }}"
+        message: "Release ${{ steps.info.outputs.tag }} for branch ${{ steps.info.outputs.branch }}"
+        force_push_tag: true
+        tag_exists_error: false
+    
+    - name: Create Archive Release
+      uses: OctopusDeploy/create-zip-package-action@v3
+      with:
+        package_id: '${{ steps.info.outputs.repo }}-${{ steps.info.outputs.branch }}'
+        version: '${{ steps.info.outputs.tag }}'
+        output_folder: '.'
+        base_path: '.'
+        files: |
+          pack.mcmeta
+          pack.png
+          **/lang/es_es.json
+          **/journal_lang/es_es.json
+          **/bestiary/es_es_0/**/*
+          **/patchouli_books/*/es_es/**/*
+    
+    - name: Upload Release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        tag: ${{ steps.info.outputs.renamed_tag }}
+        name: Translate [${{ steps.info.outputs.branch }}] ${{ steps.info.outputs.tag }}
         body: |
-          ## Changelog
-          
-          ${{ steps.changelog.outputs.new_mods && '### New Mods' || '' }}
-          ${{ steps.changelog.outputs.new_mods }}
-          
-          ${{ steps.changelog.outputs.new_translations && '### New Translations' || '' }}
-          ${{ steps.changelog.outputs.new_translations }}
-          
-          ${{ steps.changelog.outputs.fixes && '### Fixes' || '' }}
-          ${{ steps.changelog.outputs.fixes }}
+          ## Spanish Translation Pack for Minecraft [${{ steps.info.outputs.branch }}]
           
           ### Installation
           1. Download the attached ZIP file
@@ -311,32 +76,24 @@ jobs:
           
           ---
           *Automatically generated by GitHub Actions*
-        files: ${{ env.ZIP_NAME }}
+        artifacts: "${{ steps.info.outputs.repo }}-${{ steps.info.outputs.branch }}.${{ steps.info.outputs.tag }}.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
         draft: false
         prerelease: false
     
     - name: Delete original tag
-      if: ${{ steps.rename_tag.outputs.should_delete_original == 'true' }}
       run: |
-        ORIGINAL_TAG="${{ steps.tag.outputs.tag }}"
-        echo "Deleting original tag: $ORIGINAL_TAG"
-        
-        # Configure git
+        echo "Deleting original tag: ${{ steps.info.outputs.tag }}"
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # Delete original tag locally and remotely
-        git tag -d "$ORIGINAL_TAG" || echo "Local tag already deleted"
-        git push origin ":refs/tags/$ORIGINAL_TAG" || echo "Remote tag deletion failed or already deleted"
-        
-        echo "Original tag $ORIGINAL_TAG deleted successfully"
+        git push origin :refs/tags/${{ steps.info.outputs.tag }} || echo "Tag deletion failed or already deleted"
     
     - name: Show release info
       run: |
         echo "Release created successfully!"
-        echo "Tag: ${{ steps.rename_tag.outputs.final_tag }}"
-        echo "Branch: ${{ steps.branch.outputs.name }}"
-        BRANCH_UPPER=$(echo "${{ steps.branch.outputs.name }}" | tr '[:lower:]' '[:upper:]')
-        ZIP_NAME="${{ steps.repo.outputs.name }}-${BRANCH_UPPER}-${{ steps.tag.outputs.tag }}.zip"
+        echo "Original tag: ${{ steps.info.outputs.tag }}"
+        echo "Release tag: ${{ steps.info.outputs.renamed_tag }}"
+        echo "Branch: ${{ steps.info.outputs.branch }}"
+        ZIP_NAME="${{ steps.info.outputs.repo }}-${{ steps.info.outputs.branch }}.${{ steps.info.outputs.tag }}.zip"
         echo "File: $ZIP_NAME"
         echo "Check the Releases section of your repository to see the result"
